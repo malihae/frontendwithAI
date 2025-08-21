@@ -1,0 +1,461 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Smule - Sing Karaoke &amp; Make Music
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&amp;family=Roboto:wght@400;500&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-900">
+  <!-- Header / Navigation -->
+  <header class="w-full border-b border-gray-200">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+    <a class="flex items-center space-x-2" href="#">
+     <img alt="Smule logo, stylized letter S in red circle" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/f8f02320-ecf1-4552-14bd-8a38b6751bb3.jpg" width="40"/>
+     <span class="text-2xl font-bold text-red-600 tracking-wide">
+      Smule
+     </span>
+    </a>
+    <nav class="hidden md:flex space-x-8 font-medium text-gray-700">
+     <a class="hover:text-red-600 transition" href="#">
+      Discover
+     </a>
+     <a class="hover:text-red-600 transition" href="#">
+      Sing
+     </a>
+     <a class="hover:text-red-600 transition" href="#">
+      Create
+     </a>
+     <a class="hover:text-red-600 transition" href="#">
+      Community
+     </a>
+     <a class="hover:text-red-600 transition" href="#">
+      Store
+     </a>
+    </nav>
+    <div class="hidden md:flex items-center space-x-4">
+     <button class="text-red-600 font-semibold border border-red-600 rounded px-4 py-1.5 hover:bg-red-600 hover:text-white transition">
+      Sign Up
+     </button>
+     <button class="text-gray-700 font-semibold border border-gray-300 rounded px-4 py-1.5 hover:bg-gray-100 transition">
+      Log In
+     </button>
+    </div>
+    <button aria-label="Open menu" class="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-600" id="mobile-menu-button">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <!-- Mobile menu -->
+   <nav aria-label="Mobile menu" class="md:hidden hidden border-t border-gray-200 bg-white" id="mobile-menu">
+    <div class="px-4 pt-4 pb-6 space-y-4 font-medium text-gray-700">
+     <a class="block hover:text-red-600 transition" href="#">
+      Discover
+     </a>
+     <a class="block hover:text-red-600 transition" href="#">
+      Sing
+     </a>
+     <a class="block hover:text-red-600 transition" href="#">
+      Create
+     </a>
+     <a class="block hover:text-red-600 transition" href="#">
+      Community
+     </a>
+     <a class="block hover:text-red-600 transition" href="#">
+      Store
+     </a>
+     <div class="pt-2 border-t border-gray-200 flex space-x-4">
+      <button class="flex-1 text-red-600 font-semibold border border-red-600 rounded px-4 py-1.5 hover:bg-red-600 hover:text-white transition">
+       Sign Up
+      </button>
+      <button class="flex-1 text-gray-700 font-semibold border border-gray-300 rounded px-4 py-1.5 hover:bg-gray-100 transition">
+       Log In
+      </button>
+     </div>
+    </div>
+   </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-r from-red-600 to-pink-500 text-white">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 flex flex-col md:flex-row items-center md:items-start md:space-x-12">
+    <div class="md:w-1/2 text-center md:text-left">
+     <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-6">
+      Sing Your Heart Out
+      <br/>
+      Anywhere, Anytime
+     </h1>
+     <p class="text-lg sm:text-xl mb-8 max-w-xl mx-auto md:mx-0">
+      Join millions of singers worldwide and create music together. Sing karaoke, record duets, and share your passion.
+     </p>
+     <div class="flex flex-col sm:flex-row justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-6">
+      <a class="inline-flex items-center justify-center px-8 py-3 bg-white text-red-600 font-semibold rounded shadow hover:bg-gray-100 transition" href="#">
+       <i class="fas fa-microphone-alt mr-3">
+       </i>
+       Start Singing
+      </a>
+      <a class="inline-flex items-center justify-center px-8 py-3 border border-white rounded font-semibold hover:bg-white hover:text-red-600 transition" href="#">
+       <i class="fas fa-play-circle mr-3">
+       </i>
+       Watch Videos
+      </a>
+     </div>
+    </div>
+    <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center">
+     <img alt="Young woman singing karaoke with headphones and microphone in colorful room" class="rounded-lg shadow-lg max-w-full h-auto" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d147c89e-33a4-408a-d352-fd3a4f4c6bea.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Features Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+   <h2 class="text-3xl font-extrabold text-center mb-12 text-gray-900">
+    Why Sing with Smule?
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div class="flex flex-col items-center text-center space-y-4 px-4">
+     <img alt="Icon representing duet singing with two microphones" class="w-20 h-20" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b7180c08-e6c0-4fd6-2ecb-5b9814fe4b6c.jpg" width="80"/>
+     <h3 class="text-xl font-semibold text-gray-900">
+      Sing Duets
+     </h3>
+     <p class="text-gray-600">
+      Collaborate with friends or singers worldwide by recording duets and group performances.
+     </p>
+    </div>
+    <div class="flex flex-col items-center text-center space-y-4 px-4">
+     <img alt="Icon representing karaoke microphone with music notes" class="w-20 h-20" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/6744179e-1dae-441c-d6cf-d0305f2d6985.jpg" width="80"/>
+     <h3 class="text-xl font-semibold text-gray-900">
+      Karaoke Library
+     </h3>
+     <p class="text-gray-600">
+      Access thousands of songs across genres and languages to sing your favorites anytime.
+     </p>
+    </div>
+    <div class="flex flex-col items-center text-center space-y-4 px-4">
+     <img alt="Icon representing recording with a microphone and sound waves" class="w-20 h-20" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a4a06990-c6ca-40b3-ad4b-3207c4b95e54.jpg" width="80"/>
+     <h3 class="text-xl font-semibold text-gray-900">
+      Record &amp; Share
+     </h3>
+     <p class="text-gray-600">
+      Record your performances with studio effects and share them with the Smule community.
+     </p>
+    </div>
+    <div class="flex flex-col items-center text-center space-y-4 px-4">
+     <img alt="Icon representing community with multiple user avatars connected" class="w-20 h-20" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/efdbc2df-ec5e-4a34-5e51-2cc3b7bfb61c.jpg" width="80"/>
+     <h3 class="text-xl font-semibold text-gray-900">
+      Join the Community
+     </h3>
+     <p class="text-gray-600">
+      Connect with millions of music lovers, participate in challenges, and discover new friends.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Popular Songs Section -->
+  <section class="bg-gray-50 py-20">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-extrabold text-gray-900 mb-12 text-center">
+     Popular Songs to Sing
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+     <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+      <img alt="Album cover art showing a vibrant colorful abstract design for popular song 1" class="w-full h-64 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e1787f3e-f1b1-47ac-6a60-1662e079fdbb.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="font-semibold text-lg text-gray-900">
+        Shape of You
+       </h3>
+       <p class="text-gray-600">
+        Ed Sheeran
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+      <img alt="Album cover art showing a black and white photo of a singer for popular song 2" class="w-full h-64 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e80e9e29-ee01-40c4-b5d9-b3c1719f5efa.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="font-semibold text-lg text-gray-900">
+        Someone Like You
+       </h3>
+       <p class="text-gray-600">
+        Adele
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+      <img alt="Album cover art showing a colorful pop art style portrait for popular song 3" class="w-full h-64 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/a5db2b8e-492c-4ea0-f9d4-a73cf9eebe25.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="font-semibold text-lg text-gray-900">
+        Blinding Lights
+       </h3>
+       <p class="text-gray-600">
+        The Weeknd
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+      <img alt="Album cover art showing a retro style microphone and neon lights for popular song 4" class="w-full h-64 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/851b29b0-e945-46f1-662d-4857d0095653.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="font-semibold text-lg text-gray-900">
+        Uptown Funk
+       </h3>
+       <p class="text-gray-600">
+        Mark Ronson ft. Bruno Mars
+       </p>
+      </div>
+     </div>
+     <div class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+      <img alt="Album cover art showing a silhouette of a singer on stage with spotlight for popular song 5" class="w-full h-64 object-cover" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/5785a91b-5531-4970-f1a5-b4f83c77d00e.jpg" width="400"/>
+      <div class="p-4">
+       <h3 class="font-semibold text-lg text-gray-900">
+        Rolling in the Deep
+       </h3>
+       <p class="text-gray-600">
+        Adele
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- How It Works Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+   <h2 class="text-3xl font-extrabold text-gray-900 mb-12 text-center">
+    How It Works
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+    <div class="flex flex-col items-center text-center space-y-6 px-4">
+     <img alt="Icon showing a smartphone with a music note representing step 1: Choose a song" class="w-24 h-24" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/851e8761-c1ba-408a-d3b9-6e34bff37166.jpg" width="100"/>
+     <h3 class="text-xl font-semibold text-gray-900">
+      Choose a Song
+     </h3>
+     <p class="text-gray-600 max-w-xs">
+      Browse our extensive karaoke library and pick your favorite song to sing.
+     </p>
+    </div>
+    <div class="flex flex-col items-center text-center space-y-6 px-4">
+     <img alt="Icon showing a microphone and sound waves representing step 2: Record your performance" class="w-24 h-24" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/dd2ddf0a-a5f6-40ba-aaaa-7b43a4aa146c.jpg" width="100"/>
+     <h3 class="text-xl font-semibold text-gray-900">
+      Record Your Performance
+     </h3>
+     <p class="text-gray-600 max-w-xs">
+      Use our app to record your singing with studio-quality effects and filters.
+     </p>
+    </div>
+    <div class="flex flex-col items-center text-center space-y-6 px-4">
+     <img alt="Icon showing a share symbol representing step 3: Share and connect" class="w-24 h-24" height="100" loading="lazy" src="https://storage.googleapis.com/a1aa/image/74c216fc-17fb-48b9-b695-b617a9a87b7c.jpg" width="100"/>
+     <h3 class="text-xl font-semibold text-gray-900">
+      Share &amp; Connect
+     </h3>
+     <p class="text-gray-600 max-w-xs">
+      Share your recordings with the community and connect with other music lovers.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Testimonials Section -->
+  <section class="bg-red-50 py-20">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-3xl font-extrabold text-red-600 mb-12 text-center">
+     What Our Users Say
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+     <div class="bg-white rounded-lg shadow p-8 flex flex-col items-center text-center space-y-6">
+      <img alt="Portrait of a smiling young woman with curly hair and headphones" class="w-20 h-20 rounded-full object-cover" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4e5b6609-04a7-4d72-ae2d-72cfe68b2abf.jpg" width="80"/>
+      <p class="text-gray-700 italic">
+       "Smule has transformed the way I enjoy music. I love singing duets with friends from around the world!"
+      </p>
+      <h4 class="font-semibold text-red-600">
+       Jessica M.
+      </h4>
+      <p class="text-gray-500 text-sm">
+       Los Angeles, CA
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow p-8 flex flex-col items-center text-center space-y-6">
+      <img alt="Portrait of a middle-aged man with glasses smiling warmly" class="w-20 h-20 rounded-full object-cover" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/b32892dc-390e-4d50-de0a-0c9b5e730bfe.jpg" width="80"/>
+      <p class="text-gray-700 italic">
+       "The karaoke library is amazing and the recording quality is top-notch. Highly recommend!"
+      </p>
+      <h4 class="font-semibold text-red-600">
+       David L.
+      </h4>
+      <p class="text-gray-500 text-sm">
+       New York, NY
+      </p>
+     </div>
+     <div class="bg-white rounded-lg shadow p-8 flex flex-col items-center text-center space-y-6">
+      <img alt="Portrait of a young man with short hair and a friendly smile" class="w-20 h-20 rounded-full object-cover" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/412b0edf-2088-4da3-171b-0701651130d6.jpg" width="80"/>
+      <p class="text-gray-700 italic">
+       "I love the community and challenges. It’s a great way to meet new people who love music."
+      </p>
+      <h4 class="font-semibold text-red-600">
+       Carlos R.
+      </h4>
+      <p class="text-gray-500 text-sm">
+       Miami, FL
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Download App Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 bg-gradient-to-r from-pink-500 to-red-600 text-white rounded-lg mx-4 sm:mx-0">
+   <div class="flex flex-col md:flex-row items-center justify-between space-y-8 md:space-y-0 md:space-x-12">
+    <div class="md:w-1/2 text-center md:text-left">
+     <h2 class="text-3xl font-extrabold mb-4">
+      Get the Smule App
+     </h2>
+     <p class="mb-6 max-w-md mx-auto md:mx-0">
+      Sing karaoke and create music on the go. Available on iOS and Android.
+     </p>
+     <div class="flex justify-center md:justify-start space-x-6">
+      <a aria-label="Download on the App Store" href="#">
+       <img alt="App Store download button with Apple logo" class="h-12" height="50" loading="lazy" src="https://storage.googleapis.com/a1aa/image/66a3a692-41fa-4f15-f6da-3296f31c56bd.jpg" width="150"/>
+      </a>
+      <a aria-label="Get it on Google Play" href="#">
+       <img alt="Google Play download button with Google Play logo" class="h-12" height="50" loading="lazy" src="https://storage.googleapis.com/a1aa/image/03dcac37-18d6-4dea-d77f-5175ea3fd5bc.jpg" width="150"/>
+      </a>
+     </div>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+     <img alt="Mobile phone mockup showing Smule app interface with a user singing karaoke" class="rounded-lg shadow-lg max-w-full h-auto" height="600" loading="lazy" src="https://storage.googleapis.com/a1aa/image/18507fea-7553-4d6f-79eb-1062ec7d1741.jpg" width="300"/>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+    <div>
+     <a class="flex items-center space-x-2 mb-6" href="#">
+      <img alt="Smule logo, stylized letter S in red circle" class="w-10 h-10" height="40" src="https://storage.googleapis.com/a1aa/image/f8f02320-ecf1-4552-14bd-8a38b6751bb3.jpg" width="40"/>
+      <span class="text-white text-2xl font-bold tracking-wide">
+       Smule
+      </span>
+     </a>
+     <p class="text-gray-500 max-w-xs">
+      Sing karaoke, create music, and connect with millions of music lovers worldwide.
+     </p>
+    </div>
+    <div>
+     <h3 class="text-white font-semibold mb-4">
+      Product
+     </h3>
+     <ul class="space-y-2">
+      <li>
+       <a class="hover:text-white transition" href="#">
+        Features
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-white transition" href="#">
+        Pricing
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-white transition" href="#">
+        Download
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-white transition" href="#">
+        Mobile App
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-white font-semibold mb-4">
+      Company
+     </h3>
+     <ul class="space-y-2">
+      <li>
+       <a class="hover:text-white transition" href="#">
+        About Us
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-white transition" href="#">
+        Careers
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-white transition" href="#">
+        Press
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-white transition" href="#">
+        Blog
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div>
+     <h3 class="text-white font-semibold mb-4">
+      Support
+     </h3>
+     <ul class="space-y-2">
+      <li>
+       <a class="hover:text-white transition" href="#">
+        Help Center
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-white transition" href="#">
+        Contact Us
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-white transition" href="#">
+        Terms of Service
+       </a>
+      </li>
+      <li>
+       <a class="hover:text-white transition" href="#">
+        Privacy Policy
+       </a>
+      </li>
+     </ul>
+     <div class="flex space-x-4 mt-6">
+      <a aria-label="Facebook" class="hover:text-white transition" href="#">
+       <i class="fab fa-facebook fa-lg">
+       </i>
+      </a>
+      <a aria-label="Twitter" class="hover:text-white transition" href="#">
+       <i class="fab fa-twitter fa-lg">
+       </i>
+      </a>
+      <a aria-label="Instagram" class="hover:text-white transition" href="#">
+       <i class="fab fa-instagram fa-lg">
+       </i>
+      </a>
+      <a aria-label="YouTube" class="hover:text-white transition" href="#">
+       <i class="fab fa-youtube fa-lg">
+       </i>
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="mt-12 text-center text-gray-600 text-sm">
+    © 2024 Smule, Inc. All rights reserved.
+   </div>
+  </footer>
+  <script>
+   const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
